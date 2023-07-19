@@ -33,7 +33,7 @@ public class FacebookTest {
     void invalidUsernameTest() throws InterruptedException {
         driver.get(baseUrl);
         driver.findElement(By.id(email)).sendKeys("invalid_user@gmail.com");
-        driver.findElement(By.id(pwd)).sendKeys("dummyPasswordtest");
+        driver.findElement(By.id(pwd)).sendKeys("dummyPasswordGitHub");
         driver.findElement(By.name(loginButton)).click();
         Thread.sleep(3000);
         WebElement identifyLinkElement = driver.findElement(By.xpath(identifyLink));
@@ -42,7 +42,7 @@ public class FacebookTest {
 
     @AfterClass
     void tearDown() {
-        System.out.println("Quitting the browser");
+        System.out.println("Quitting the application");
         driver.quit();
     }
 
