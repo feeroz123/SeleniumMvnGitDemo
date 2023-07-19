@@ -42,7 +42,7 @@ public class FacebookTest {
 
     @AfterClass
     void tearDown() {
-        System.out.println("Quitting the application");
+        System.out.println("Quitting the test process");
         driver.quit();
     }
 
